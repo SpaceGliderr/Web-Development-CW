@@ -1,0 +1,253 @@
+/*Start of Parties CSS*/
+body {
+  background: #d5d5d5;
+}
+
+.parties-content-container{
+  width: 1250px;
+  margin: auto;
+  position: relative;
+}
+
+.parties-heading {
+  padding-left: 25px;
+  font-family: monaco,Consolas,Lucida Console,monospace;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 250%;
+  text-shadow: 3px 2px lightgrey;
+}
+
+/* Start of Speech Information Bubble */
+.speech-bubble{
+  font-family: monaco,Consolas,Lucida Console,monospace;
+  text-transform: uppercase;
+  width: 1210px;
+  position: relative;
+  background: #8ccad1;
+  border-radius: 1em;
+  margin-bottom: 10px;
+  text-indent: 2em;
+  margin: 0px 20px;
+  padding-left: 10px;
+  box-shadow: 3px 3px 10px -5px black;
+}
+
+.speech-bubble h4{
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+
+.speech-bubble p{
+  padding-bottom: 5px;
+}
+/* End of Speech Information Bubble */
+
+/* Start of the State List*/
+.state-list{
+  position: absolute;
+  top: 140px;
+  left: 30%;
+  background-color: #dff9fb;
+  width: 430px;
+  height: 160px;
+  margin-top: 25px;
+  border-radius: 50px;
+  padding-right: 20px;
+}
+
+#list-container{
+  width: 200px;
+  height: 160px;
+  display: inline-block;
+}
+
+.state-list ul{
+  list-style-type: none;
+}
+
+.state-list ul li div{
+  width: 20px;
+  height: 15px;
+  border: 1px solid black;
+  display: inline-block;
+  float: left;
+}
+
+.state-list ul li p{
+  font-family: monaco,Consolas,Lucida Console,monospace;
+  display: inline;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+/* End of State List */
+
+/* Start of Other Result Option */
+.other-results{
+  width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.other-results p{
+  display: inline;
+  font-family: Arial Narrow,Arial,sans-serif;
+  font-size: 28px;
+  text-shadow: 2px 2px lightgrey;
+}
+
+.other-results button{
+  width: 40%;
+  margin-left: 32px;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.other-results button span{
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.other-results button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.other-results button:hover span{
+  padding-right: 25px;
+}
+
+.other-results button:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+/* End of Other Result Option */
+
+/* Start of Result Tables */
+.hidden{
+  display: none;
+}
+
+.results{
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.results h3{
+  padding-left: 25px;
+}
+
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 1200px;
+  margin: 0px 25px 0px 25px;
+  border: 6px double white;
+}
+
+td, th{
+  border: 2px groove #ffffff;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #e9ebf2;
+}
+
+tr:nth-child(odd){
+  background-color: #bec3d1;
+}
+/* End of Result Tables */
+
+/* Start of Related Articles */
+.related-container{
+  background-color: #344069;
+  border-radius: 15px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  color: white;
+  font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+  font-size: 90%;
+}
+
+.related-container h2{
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+.related-content{
+  width: 585px;
+  display: inline-block;
+}
+
+.related-content ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.related-content ul li{
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #9da7c7;
+  box-shadow: 7px 7px 17px -5px black;
+}
+
+.related-content ul li:last-child{
+  margin-bottom: 0px;
+}
+
+.related-content ul li h3{
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding-left: 5px;
+}
+
+.related-content ul li h3:before{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.related-content ul li:hover{
+  cursor: pointer;
+}
+
+.related-content ul li:hover h3{
+  padding-left: 25px;
+}
+
+.related-content ul li:hover h3:before{
+  opacity: 1;
+  left: 0;
+}
+
+.related-content ul li p{
+  transition: 0.5s;
+  padding-left: 25px;
+}
+
+.related-content ul li:hover p{
+  padding-left: 35px;
+}
+/* End of Related Articles *.

@@ -1,0 +1,78 @@
+.footer {
+	height: 157px;
+	width: 100%;
+	clear: both;
+	background-color: #031b2e;
+	padding-top: 5px;
+	float: left;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 85%;
+	display: flex;
+}
+
+.footer-left {
+	float: left;
+	padding-left: 10px;
+	color: white;
+	width: 450px;
+}
+
+.footer-left a img{
+  width: 65px;
+  height: 65px;
+	padding: 10px;
+	padding-left: 30px;
+	display:inline-block;
+}
+
+.footer-left a img:hover{
+	opacity: 0.7;
+	transition-duration: 0.3s;
+}
+
+.footer-middle {
+	margin: auto;
+	width: 400px;
+	text-align: center;
+	color: white;
+	margin-top: 0;
+	font-size: 80%;
+}
+
+.footer-right{
+	color: white;
+	width: 450px;
+}
+
+.footer-right form input {
+		width: 220px;
+		border-radius: 15px;
+		border: 3px solid #696969;
+}
+
+.subscribe-button {
+	background-image: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%);
+	font-size: 80%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-shadow: 2px 2px 2px black;
+  color: white;
+  margin: 1px 25px;
+	margin-left: -20px;
+  border: solid 2px #b31010;
+	border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.9;
+  display: inline-block;
+	width: 90px;
+  height: 46px;
+  transition-duration: 0.4s;
+}
+
+.subscribe-button:hover {
+	background-position: right center;
+  color: white;
+  border-color: currentColor;
+  background-color: white;
+}

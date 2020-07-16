@@ -1,0 +1,277 @@
+/* Start of Trending News CSS */
+  /* Trending Title and Container */
+
+  body {
+    background: #d5d5d5;
+  }
+
+  .trending-container{
+    max-width: 1250px;
+    height: 550px;
+    position: relative;
+    margin: auto;
+    margin-top: 38px;
+  }
+
+  .trending-title{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    border-left: 4px solid red;
+  }
+
+  .trending-title h2{
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  /* Start of Slideshow */
+  .slideshow-container{
+    width: 1230px;
+    height: 450px;
+    display: block;
+    padding-top: 15px
+  }
+
+  /* Slideshow Container Settings */
+  .slideshow-container a img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10.5%;
+    left: 55.5%;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .slideshow-container div img{
+    width: 750px;
+    height: 450px;
+    margin-left: 10px;
+    border: 5px double white;
+    box-shadow: 5px 7px 13px -1px rgba(49,49,49,0.69);
+  }
+
+  .slideshow-container div{
+    display: inline-block;
+  }
+
+  .prev, .next {
+    font-size: 50px;
+    position: absolute;
+    z-index: 9999;
+    top: 42%;
+    left: 2.3%;
+    color: #81cfe0;
+    cursor: pointer;
+  }
+
+  .next {
+    float: right;
+    left: 58%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* Caption Settings */
+  .caption-container{
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+    padding-left: 0px;
+    width: 430px;
+    height: 460px;
+    float: right;
+    text-align: justify;
+  }
+
+  .caption-container h1{
+    margin-top: 0px;
+  }
+
+  .caption-container p{
+    font-size: 14pt;
+  }
+
+  /* Animation Settings */
+  .slide{
+    display: none;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Bullet Settings */
+  .bullet-container{
+    text-align: center;
+    width: 750px;
+    height: 50px;
+    padding-top: 40px;
+  }
+
+  .bullet-indicator{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .bullet-indicator:hover {
+    cursor: pointer;
+  }
+
+  .bullet-active {
+    background-color: #717171;
+  }
+/* End of Trending News CSS */
+
+
+/* Start of Latest News CSS */
+  /* Latest News Title and Container */
+  .latest-container{
+    max-width: 1250px;
+    height: 780px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .latest-title{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    border-left: 4px solid blue;
+  }
+
+  .latest-title h2{
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  /* Latest News Upper Row */
+  .latest-upper-row{
+    max-width: 1230px;
+    height: 360px;
+    margin: 15px 10px 0px 10px;
+    padding-top: 0;
+  }
+
+  .latest-upper-container{
+    display: inline-block;
+    width: 600px;
+    height: 360px;
+    position: relative;
+    box-shadow: 5px 7px 13px -1px rgba(49,49,49,0.69);
+    border: 5px solid #ededed;
+    transition-duration: 0.7s;
+    overflow: hidden;
+  }
+
+  .latest-upper-container img{
+    width: 600px;
+    height: 360px;
+    filter: brightness(70%);
+  }
+
+  .latest-upper-container:hover{
+    cursor: pointer;
+    filter: brightness(140%);
+    transition-duration: 0.7s;
+  }
+
+  .latest-upper-container:hover .latest-upper-caption {
+    top: 30%;
+    transition: 0.7s;
+  }
+
+  .latest-upper-caption {
+    background-color: rgba(28, 28, 28, 0.8);
+    position: absolute;
+    z-index: 99;
+    padding-left: 15px;
+    top: 68%;
+    color: white;
+    text-decoration: none;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+    transition: 0.7s;
+    height: 70%;
+  }
+
+  .latest-upper-caption p {
+    line-height: 1.75em;
+    padding-left: 15px;
+  }
+
+  /* Latest News Lower Row */
+  .latest-lower-row{
+    max-width: 1230px;
+    height: 320px;
+    margin: 30px 10px 0px 10px;
+  }
+
+  .latest-lower-container{
+    display: inline-block;
+    width: 385px;
+    height: 320px;
+    background-color: #ededed;
+    box-shadow: 5px 7px 13px -1px rgba(49,49,49,0.69);
+    border: 5px solid #ededed;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+    transition: 0.7s;
+  }
+
+  .latest-lower-container:hover{
+    cursor: pointer;
+    filter: brightness(140%);
+    transition-duration: 0.7s;
+  }
+
+  .latest-lower-container img{
+    width: 385px;
+    height: 250px;
+    filter: brightness(70%);
+  }
+
+  .latest-lower-row a{
+    text-decoration: none;
+  }
+
+  .latest-lower-row a h3{
+    margin: 3px 2px 0px 5px;
+    padding-top: 5px;
+    color: black;
+  }
+
+  .latest-lower-row a h3:hover{
+    cursor: pointer;
+    color: #ff6348;
+  }
+
+  /* Latest News Content Alignment */
+  .latest-content-left{
+    float:left;
+  }
+
+  .latest-content-center{
+    position: relative;
+    margin: auto;
+    margin-left: 23px;
+  }
+
+  .latest-content-right{
+    float: right;
+  }
+/* End of Latest News CSS

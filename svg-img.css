@@ -1,0 +1,64 @@
+.svg-img{
+  text-align: center;
+}
+
+.malaysia path:hover{
+  cursor: pointer;
+  fill: #f5f6fa;
+}
+
+.perak path{
+  fill: #1abc9c;
+}
+
+.penang path{
+  fill: #3498db;
+}
+
+.kedah path{
+  fill: #f1c40f;
+}
+
+.perlis path{
+  fill: #eb2f06;
+}
+
+.langkawi path{
+  fill: #95afc0;
+}
+
+.johor path{
+  fill: #FDA7DF;
+}
+
+.kelantan path{
+  fill: #D980FA;
+}
+
+.melaka path{
+  fill: #0652DD;
+}
+
+.negeri-sembilan path{
+  fill: #A3CB38;
+}
+
+.pahang path{
+  fill: #f5cd79;
+}
+
+.selangor path{
+  fill: #f19066;
+}
+
+.terengganu path{
+  fill: #c44569;
+}
+
+.sabah path{
+  fill: #574b90;
+}
+
+.sarawak path{
+  fill: #3ae374;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Malaysia Happening - Home</title>
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+  </head>
+
+  <body onload="controlSlideShow(true)">
+
+    <!-- Start of Navigation Bar -->
+    <nav>
+      <div class="global-nav">
+        <div class="nav-left">
+          <a href="home.html" style="padding-left: 15px;"><img src="logo.png" alt="Malaysia Happening Logo"></a>
+          <ul>
+            <li style="padding-left: 20px;"><a href="home.html" class="active">HOME</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="election.html">ELECTION</a></li>
+            <li><a href="discussions.html">DISCUSSIONS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <ul>
+            <div class="login">
+              <li><button><a href="#">LOG IN</a></button></li>
+                <div class="login-dropdown">
+                  <form>
+                  <input autocomplete="off" type="text" placeholder="Email" name="email" size="40"required><br><br>
+                  <input type="password" placeholder="Password" name="psw" size="40" required><br>
+                  <button class="login-button">Log In</button>
+                  <h3 style="padding-left:2em; color:grey">---------------------or---------------------</h3>
+                  <span style="padding-left:6em">
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.gmail.com" class="fa fa-google"></a>
+                  </span>
+                  </form>
+                </div>
+            </div>
+            <li><a href="signup.html">SIGN UP</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- Start of Trending News -->
+    <div class="trending-container">
+      <div class="trending-title">
+        <h2>Trending</h2>
+      </div>
+
+      <div class="slideshow-container">
+        <a id="prev-button" class="prev" onclick="slideAction(-1)">&#10094;</a>
+        <a id="pause-button" onclick="controlSlideShow(false)"><img src="pause.png"></img></a>
+        <a id="play-button" onclick="controlSlideShow(true)"><img src="play.png"></a>
+
+        <div class="slide fade">
+          <img src="img_1.jpg" alt="Image 1">
+          <div class="caption-container">
+            <h1>Who really wants Najib for PM again? Only Sarawak pact, not Sarawakians, says Pakatan leader</h1>
+            <p>
+              KUCHING, June 29 ― Batang Sadong MP Datuk Seri Nancy Shukri should not claim to speak for rural Sarawakians as wanting Datuk Seri Najib Razak back as prime minister, state Pakatan Harapan (PH) chief Chong Chieng Jen said today.
+              <br><br>
+              Chong, who is also the federal deputy minister of domestic trade and consumer affairs, said the most Nancy could claim was to be speaking on behalf of Gabungan Parti Sarawak (GPS) as one of its lawmakers.
+            </p>
+            <br>
+            <a href="article3.html">Read More...</a>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img src="img_10.jpg" alt="Image 2">
+          <div class="caption-container">
+            <h1>Malaysian Prime Minister Mahathir Mohamad (right) raises up Anwar Ibrahim’s hand during by-election campaign in Port Dickson, Malaysia</h1>
+            <p>
+              PORT DICKSON: June 27 — Mahathir Mohamad, the 93-year-old prime minister of Malaysia, said on Saturday that he will step down within three years.
+            </p>
+            <br><br><br>
+            <a href="article8.html">Read More...</a>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img src="img_3.jpg" alt="Image 3">
+          <div class="caption-container">
+            <h1>Mukhriz in the dark over 1MDB funds channelled to Kedah Umno</h1>
+            <p>
+              ALOR SETAR: Kedah Menteri Besar Mukhriz Mahathir said he was unaware about 1MDB funds being channelled to Kedah Umno while he was the party’s state liaison chairman.
+              <br><br>
+              He said matters concerning the party’s funds were handled by Umno’s state treasurer Abdul Azeez Abdul Rahim, who also managed the expenditure and disbursement to Umno divisions statewide.
+            </p>
+            <br><br><br>
+            <a href="article5.html">Read More...</a>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img src="img_4.jpg" alt="Image 4">
+          <div class="caption-container">
+            <h1>Johor Opposition demands state govt disclose Pasir Gudang polluters</h1>
+            <p>
+              ISKANDAR PUTERI, June 26 — The Johor Pakatan Harapan (PH) government must name the people and companies found responsible for the air pollution in Pasir Gudang that has resulted in the closure of nearly 500 schools and caused breathing problems for residents in the area.
+              <br><br>
+              Johor Umno chief Datuk Hasni Mohammad, who also heads the state Opposition pact, accused the ruling PH of hiding the identities of the culprits.
+            </p>
+            <br><br><br>
+            <a href="article6.html">Read More...</a>
+          </div>
+        </div>
+
+        <a id="next-button" class="next" onclick="slideAction(1)">&#10095;</a>
+      </div>
+
+      <div class="bullet-container">
+        <span class="bullet-indicator" onclick="bulletControls(1)"></span>
+        <span class="bullet-indicator" onclick="bulletControls(2)"></span>
+        <span class="bullet-indicator" onclick="bulletControls(3)"></span>
+        <span class="bullet-indicator" onclick="bulletControls(4)"></span>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+    <!-- End of Trending News -->
+
+    <br><br>
+
+    <!-- Start of Latest News -->
+    <div style="background-color: rgba(230, 230, 230, 0.7)">
+      <br>
+      <div class="latest-container">
+        <div class="latest-title">
+          <h2>Latest</h2>
+        </div>
+
+        <div class="latest-upper-row">
+          <div class="latest-upper-container latest-content-left">
+            <a href="article8.html">
+            <img src="img_10.jpg" alt="">
+            <div class="latest-upper-caption">
+              <h1>Malaysia’s 93-year-old leader on when he will step down</h1>
+              <p>Mahathir Mohamad, the 93-year-old prime minister of Malaysia, said on Saturday that he will step down within three years and hand over the reins to Anwar Ibrahim — his protege-turned-rival before the two reconciled again to win last year’s general elections. </p>
+            </div>
+            </a>
+          </div>
+
+          <div class="latest-upper-container latest-content-right">
+            <a href="article6.html">
+            <img src="img_4.jpg" alt="">
+            <div class="latest-upper-caption">
+              <h1>Johor Opposition demands state govt disclose Pasir Gudang polluters</h1>
+              <p>The Johor Pakatan Harapan (PH) government must name the people and companies found responsible for the air pollution in Pasir Gudang that has resulted in the closure of nearly 500 schools and caused breathing problems for residents in the area.</p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="latest-lower-row">
+          <div class="latest-lower-container latest-content-left">
+            <a href="article1.html">
+            <img src="img_8.jpg" alt="">
+              <h3>How did foreigners get identification documents, NGO asks Sabah govt</h3>
+            </a>
+          </div>
+          <div class="latest-lower-container latest-content-center">
+            <a href="article5.html">
+            <img src="img_3.jpg" alt="">
+              <h3>Mukhriz in the dark over 1MDB funds channelled to Kedah Umno</h3>
+            </a>
+          </div>
+          <div class="latest-lower-container latest-content-right">
+            <a href="article2.html">
+            <img src="img_5.jpg" alt="">
+              <h3>MACC clears Azmin of graft allegations</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Latest News -->
+
+    <!-- Start of Footer -->
+    <div class="footer">
+      <div class="footer-left">
+        <p>&nbsp&nbspFOLLOW US ON OUR SOCIAL MEDIA PAGES :</p>
+        <br>
+
+        <a href="https://www.facebook.com/"><img src="fb.png"></img></a>
+
+        <a href="https://www.instagram.com/"><img src="ins.png"></img></a>
+
+        <a href="https://www.twitter.com/"><img src="twt.png"></img></a>
+
+      </div>
+
+      <div class="footer-middle">
+        <h1>Malaysia Happening</h1>
+        <p>Sunway College, No. 2, Jalan Universiti, Bandar Sunway, 47500, Selangor</p>
+        <p>Copyright © Malaysia Happening - 2019<p>
+      </div>
+
+      <div class="footer-right">
+       <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBSCRIBE TO OUR WEEKLY NEWSLETTER:</p>
+       <br>
+       <br>
+      <form>
+        <input type="text" placeholder="Email" name="email" size="40"required>
+        <button type="submit" class="subscribe-button">Subscribe</button>
+      </form>
+      </div>
+    </div>
+    <!-- End of Footer -->
+
+  </body>
+
+</html>

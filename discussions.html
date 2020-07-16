@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Malaysia Happening - Discussions</title>
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="discussions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+  </head>
+
+  <body style="background-color:#F1F1F1">
+    <!-- Start of Navigation Bar -->
+    <nav>
+      <div class="global-nav">
+        <div class="nav-left">
+          <a href="home.html" style="padding-left: 15px;"><img src="logo.png" alt="Malaysia Happening Logo"></a>
+          <ul>
+            <li style="padding-left: 20px;"><a href="home.html">HOME</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="election.html">ELECTION</a></li>
+            <li><a href="discussions.html" class="active">DISCUSSIONS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <ul>
+            <div class="login">
+              <li><button><a href="#">LOG IN</a></button></li>
+                <div class="login-dropdown">
+                  <form>
+                  <input autocomplete="off" type="text" placeholder="Email" name="email" size="40"required><br><br>
+                  <input type="password" placeholder="Password" name="psw" size="40" required><br>
+                  <button class="login-button">Log In</button>
+                  <h3 style="padding-left:2em; color:grey">---------------------or---------------------</h3>
+                  <span style="padding-left:6em">
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.gmail.com" class="fa fa-google"></a>
+                  </span>
+                  </form>
+                </div>
+            </div>
+            <li><a href="signup.html">SIGN UP</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- Start of Discussion Content -->
+    <div class="discussion-content">
+      <!-- Start of Section 1 -->
+      <div class="discussion-details">
+        <div class="discussion-preview" onclick="showModal(1)">
+          <h2>The Sabah Government needs to take action.</h2>
+          <p>
+            As a Sabahan, I feel disgusted at what the Sabah Government is doing right now. They are using taxpayer's money for their own good and not for the greater cause of developing the country. In my personal opinion, they really should step up their game and put in some effort for our country.
+          </p>
+          <p class="read-more"></p>
+        </div>
+
+        <div class="discussion-author">
+          <p class="publish">Posted by user <a onmouseover="showDesc(1)" onmouseout="hideDesc()">adrianching123</a> 15 hours ago</p>
+          <p class="comments">&nbsp;&nbsp;2 Comments</p>
+          <img src="comment icon.png" alt="">
+          <p class="share">&nbsp;&nbsp;Share</p>
+          <img src="share icon.png" alt="share">
+          <p class="save">&nbsp;Save</p>
+          <img src="save icon.png" alt="share">
+          <div class="user-desc hidden" id="user-desc1">
+            <i class="fa fa-user icon"></i>
+            <h4>adrianching123</h4>
+            <p>I am very interested in politics.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="discussion-ratings">
+        <p>46.5 K</p>
+        <img src="upvote blank.png" alt="" style="padding-bottom: 8px;" class="" onclick="ratings(1, 1, 1)" id="upvote-blank1">
+        <img src="upvote.png" alt="" style="padding-bottom: 8px;" class="hidden" onclick="ratings(2, 1, 1)" id="upvote-color1">
+        <img src="downvote blank.png" alt="" class="" onclick="ratings(3, 1, 1)" id="downvote-blank1">
+        <img src="downvote.png" alt="" class="hidden" onclick="ratings(4, 1, 1)" id="downvote-color1">
+        <p>15.2 K</p>
+      </div>
+
+      <div id="modal-1" class="discussion-modal">
+        <div class="discussion-modal-content">
+          <span class="close1 exit">&times;</span>
+          <div class="discussion-modal-topic">
+            <h2>The Sabah Government needs to take action.</h2>
+            <p>As a Sabahan, I feel disgusted at what the Sabah Government is doing right now. They are using taxpayer's money for their own good and not for the greater cause of developing the country. In my personal opinion, they really should step up their game and put in some effort for our country.</p>
+            <br>
+            <p class="publish">Posted by user adrianching123 15 hours ago</p>
+            <img src="downvote blank.png" alt="" class="modal-ratings" onclick="ratings(3, 1, 2)" id="modal-downvote-blank1">
+            <img src="downvote.png" alt="" class="modal-ratings hidden" onclick="ratings(4, 1, 2)" id="modal-downvote-color1">
+            <img src="upvote blank.png" alt="" class="modal-ratings" onclick="ratings(1, 1, 2)" id="modal-upvote-blank1">
+            <img src="upvote.png" alt="" class="modal-ratings hidden" onclick="ratings(2, 1, 2)" id="modal-upvote-color1">
+            <hr>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>I totally agree! They should really take action right now.</p>
+            <p>CheongKS2 Replied</p>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>To be honest, I think that the Sabah Government already has too much on their hands. Give them a break, they are trying their best while we are sitting here and typing comments.</p>
+            <p>Pronit Replied</p>
+          </div>
+          <label for="comment">Comment:</label>
+          <input type="text" name="comments" id="comment" placeholder="Type something...">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      <!-- End of Section 1 -->
+      <hr>
+      <!-- Start of Section 2 -->
+      <div class="discussion-details">
+        <div class="discussion-preview" onclick="showModal(2)">
+          <h2>The 1MDB Scandal is really pushing my buttons!</h2>
+          <p>
+            As a patriotic Malaysian, I feel disappointed. How could someone do such a thing is beyond my comprehension. This situation makes me sick to my stomach. We as Malaysians deserve the truth and justice must be served.
+          </p>
+          <p class="read-more"></p>
+        </div>
+
+        <div class="discussion-author">
+          <p class="publish">Posted by user <a onmouseover="showDesc(5)" onmouseout="hideDesc()">bonkRipper29</a> 10 hours ago</p>
+          <p class="comments">&nbsp;&nbsp;2 Comments</p>
+          <img src="comment icon.png" alt="">
+          <p class="share">&nbsp;&nbsp;Share</p>
+          <img src="share icon.png" alt="share">
+          <p class="save">&nbsp;Save</p>
+          <img src="save icon.png" alt="share">
+          <div class="user-desc hidden" id="user-desc5">
+            <i class="fa fa-user icon"></i>
+            <h4>bonkRipper29</h4>
+            <p>Anon.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="discussion-ratings">
+        <p>16.5 K</p>
+        <img src="upvote blank.png" alt="" style="padding-bottom: 8px;" class="" onclick="ratings(1, 2, 1)" id="upvote-blank2">
+        <img src="upvote.png" alt="" style="padding-bottom: 8px;" class="hidden" onclick="ratings(2, 2, 1)" id="upvote-color2">
+        <img src="downvote blank.png" alt="" class="" onclick="ratings(3, 2, 1)" id="downvote-blank2">
+        <img src="downvote.png" alt="" class="hidden" onclick="ratings(4, 2, 1)" id="downvote-color2">
+        <p>10.2 K</p>
+      </div>
+
+      <div id="modal-2" class="discussion-modal">
+        <div class="discussion-modal-content">
+          <span class="close2 exit">&times;</span>
+          <div class="discussion-modal-topic">
+            <h2>The 1MDB Scandal is really pushing my buttons!</h2>
+            <p>
+              As a patriotic Malaysian, I feel disappointed. How could someone do such a thing is beyond my comprehension. This situation makes me sick to my stomach. We as Malaysians deserve the truth and justice must be served.
+            </p>
+            <br>
+            <p class="publish">Posted by user bonkRipper29 15 hours ago</p>
+            <img src="downvote blank.png" alt="" class="modal-ratings" onclick="ratings(3, 2, 2)" id="modal-downvote-blank2">
+            <img src="downvote.png" alt="" class="modal-ratings hidden" onclick="ratings(4, 2, 2)" id="modal-downvote-color2">
+            <img src="upvote blank.png" alt="" class="modal-ratings" onclick="ratings(1, 2, 2)" id="modal-upvote-blank2">
+            <img src="upvote.png" alt="" class="modal-ratings hidden" onclick="ratings(2, 2, 2)" id="modal-upvote-color2">
+            <hr>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>You cannot just point fingers at someone without any proof. That’s not how this works!</p>
+            <p>CheongKS2 Replied</p>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>How can someone be so delusional? Even I can figure out who is responsible for this mess.</p>
+            <p>Pronit Replied</p>
+          </div>
+          <label for="comment">Comment:</label>
+          <input type="text" name="comments" id="comment" placeholder="Type something...">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      <!-- End of Section 2 -->
+      <hr>
+      <!-- Start of Section 3 -->
+      <div class="discussion-details">
+        <div class="discussion-preview" onclick="showModal(3)">
+          <h2>The situation concerning the water crisis in Selangor.</h2>
+          <p>
+            The water crisis issue is making our daily lives harder. A simple task such as showering and washing clothes are becoming a burden for our busy lives. I hope that this issue can be resolved as soon as possible. What are your opinions regarding the issue?
+          </p>
+          <p class="read-more"></p>
+        </div>
+
+        <div class="discussion-author">
+          <p class="publish">Posted by user <a onmouseover="showDesc(2)" onmouseout="hideDesc()">CheongKS2</a> 15 hours ago</p>
+          <p class="comments">&nbsp;&nbsp;3 Comments</p>
+          <img src="comment icon.png" alt="">
+          <p class="share">&nbsp;&nbsp;Share</p>
+          <img src="share icon.png" alt="share">
+          <p class="save">&nbsp;Save</p>
+          <img src="save icon.png" alt="share">
+          <div class="user-desc hidden" id="user-desc2">
+            <i class="fa fa-user icon"></i>
+            <h4>CheongKS2</h4>
+            <p>I love debating.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="discussion-ratings">
+        <p>4.5 K</p>
+        <img src="upvote blank.png" alt="" style="padding-bottom: 8px;" class="modal-ratings" onclick="ratings(1, 3, 1)" id="upvote-blank3">
+        <img src="upvote.png" alt="" style="padding-bottom: 8px;" class="modal-ratings hidden" onclick="ratings(2, 3, 1)" id="upvote-color3">
+        <img src="downvote blank.png" alt="" class="modal-ratings" onclick="ratings(3, 3, 1)" id="downvote-blank3">
+        <img src="downvote.png" alt="" class="modal-ratings hidden" onclick="ratings(4, 3, 1)" id="downvote-color3">
+        <p>1.2 K</p>
+      </div>
+
+      <div id="modal-3" class="discussion-modal">
+        <div class="discussion-modal-content">
+          <span class="close3 exit">&times;</span>
+          <div class="discussion-modal-topic">
+            <h2>The situation concerning the water crisis in Selangor.</h2>
+            <p>
+              The water crisis issue is making our daily lives harder. A simple task such as showering and washing clothes are becoming a burden for our busy lives. I hope that this issue can be resolved as soon as possible. What are your opinions regarding the issue?
+            </p>
+            <br>
+            <p class="publish">Posted by user CheongKS2 7 hours ago</p>
+            <img src="downvote blank.png" alt="" class="modal-ratings" onclick="ratings(3, 3, 2)" id="modal-downvote-blank3">
+            <img src="downvote.png" alt="" class="modal-ratings hidden" onclick="ratings(4, 3, 2)" id="modal-downvote-color3">
+            <img src="upvote blank.png" alt="" class="modal-ratings" onclick="ratings(1, 3, 2)" id="modal-upvote-blank3">
+            <img src="upvote.png" alt="" class="modal-ratings hidden" onclick="ratings(2, 3, 2)" id="modal-upvote-color3">
+            <hr>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>Yessss... My already miserable life is becoming worse each day that the crisis continues. I don’t know how long I can tolerate this situation until I lose my will to live.</p>
+            <p>adrianching123 Replied</p>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>@adrianching123 Please sir/madam, do seek professional help if you are feeling suicidal. This is not a laughing matter. I’m sure there will be better days ahead that you will look forward to!</p>
+            <p>nickle Replied</p>
+          </div>
+          <label for="comment">Comment:</label>
+          <input type="text" name="comments" id="comment" placeholder="Type something...">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      <!-- End of Section 3 -->
+      <hr>
+      <!-- Start of Section 4 -->
+      <div class="discussion-details">
+        <div class="discussion-preview" onclick="showModal(4)">
+          <h2>Victory for Pakatan Harapan at GE14!</h2>
+          <p>
+            I hope I won’t receive any backlash from this post but my heart is relieved that our country is finally in good hands. I, along with the majority of Malaysia, sincerely believe that our country is heading into a brighter future for our younger generations.
+          </p>
+          <p class="read-more"></p>
+        </div>
+
+        <div class="discussion-author">
+          <p class="publish">Posted by user <a onmouseover="showDesc(3)" onmouseout="hideDesc()">Pronit</a> 6 hours ago</p>
+          <p class="comments">&nbsp;&nbsp;1 Comments</p>
+          <img src="comment icon.png" alt="">
+          <p class="share">&nbsp;&nbsp;Share</p>
+          <img src="share icon.png" alt="share">
+          <p class="save">&nbsp;Save</p>
+          <img src="save icon.png" alt="share">
+          <div class="user-desc hidden" id="user-desc3">
+            <i class="fa fa-user icon"></i>
+            <h4>Pronit</h4>
+            <p>I am very interested in politics.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="discussion-ratings">
+        <p>3.5 K</p>
+        <img src="upvote blank.png" alt="" style="padding-bottom: 8px;" class="" onclick="ratings(1, 4, 1)" id="upvote-blank4">
+        <img src="upvote.png" alt="" style="padding-bottom: 8px;" class="hidden" onclick="ratings(2, 4, 1)" id="upvote-color4">
+        <img src="downvote blank.png" alt="" class="" onclick="ratings(3, 4, 1)" id="downvote-blank4">
+        <img src="downvote.png" alt="" class="hidden" onclick="ratings(4, 4, 1)" id="downvote-color4">
+        <p>1.5 K</p>
+      </div>
+
+      <div id="modal-4" class="discussion-modal">
+        <div class="discussion-modal-content">
+          <span class="close4 exit">&times;</span>
+          <div class="discussion-modal-topic">
+            <h2>Victory for Pakatan Harapan at GE14!</h2>
+            <p>
+              I hope I won’t receive any backlash from this post but my heart is relieved that our country is finally in good hands. I, along with the majority of Malaysia, sincerely believe that our country is heading into a brighter future for our younger generations.
+            </p>
+            <br>
+            <p class="publish">Posted by user Pronit 15 hours ago</p>
+            <img src="downvote blank.png" alt="" class="modal-ratings" onclick="ratings(3, 4, 2)" id="modal-downvote-blank4">
+            <img src="downvote.png" alt="" class="modal-ratings hidden" onclick="ratings(4, 4, 2)" id="modal-downvote-color4">
+            <img src="upvote blank.png" alt="" class="modal-ratings" onclick="ratings(1, 4, 2)" id="modal-upvote-blank4">
+            <img src="upvote.png" alt="" class="modal-ratings hidden" onclick="ratings(2, 4, 2)" id="modal-upvote-color4">
+            <hr>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>As a Barisan National supporter, I feel disappointed but I accept my fate because it is a fair election. I hope that Pakatan Harapan will lead us to success.</p>
+            <p>CheongKS2 Replied</p>
+          </div>
+          <label for="comment">Comment:</label>
+          <input type="text" name="comments" id="comment" placeholder="Type something...">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      <!-- End of Section 4 -->
+      <hr>
+      <!-- Start of Section 5 -->
+      <div class="discussion-details">
+        <div class="discussion-preview" onclick="showModal(5)">
+          <h2>Lock-Up Detainees being abused by malaysian officers</h2>
+          <p>
+            Hearing the issues that the abuse and harassment that these foreigners go through makes me ashamed to be Malaysian, the government needs to enforce the protection of these incidents and prevent such cases from ever happening, and those officers should be sacked. What do you all think?
+          </p>
+          <p class="read-more"></p>
+        </div>
+
+        <div class="discussion-author">
+          <p class="publish">Posted by user <a onmouseover="showDesc(4)" onmouseout="hideDesc()">nickle</a> 5 hours ago</p>
+          <p class="comments">&nbsp;&nbsp;3 Comments</p>
+          <img src="comment icon.png" alt="">
+          <p class="share">&nbsp;&nbsp;Share</p>
+          <img src="share icon.png" alt="share">
+          <p class="save">&nbsp;Save</p>
+          <img src="save icon.png" alt="share">
+          <div class="user-desc hidden" id="user-desc4">
+            <i class="fa fa-user icon"></i>
+            <h4>nickle</h4>
+            <p>I want to become a politician.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="discussion-ratings">
+        <p>2.0 K</p>
+        <img src="upvote blank.png" alt="" style="padding-bottom: 8px;" class="" onclick="ratings(1, 5, 1)" id="upvote-blank5">
+        <img src="upvote.png" alt="" style="padding-bottom: 8px;" class="hidden" onclick="ratings(2, 5, 1)" id="upvote-color5">
+        <img src="downvote blank.png" alt="" class="" onclick="ratings(3, 5, 1)" id="downvote-blank5">
+        <img src="downvote.png" alt="" class="hidden" onclick="ratings(4, 5, 1)" id="downvote-color5">
+        <p>1.0 K</p>
+      </div>
+
+      <div id="modal-5" class="discussion-modal">
+        <div class="discussion-modal-content">
+          <span class="close5 exit">&times;</span>
+          <div class="discussion-modal-topic">
+            <h2>Lock-Up Detainees being abused by malaysian officers</h2>
+            <p>
+              Hearing the issues that the abuse and harassment that these foreigners go through makes me ashamed to be Malaysian, the government needs to enforce the protection of these incidents and prevent such cases from ever happening, and those officers should be sacked. What do you all think?
+            </p>
+            <br>
+            <p class="publish">Posted by user nickle 5 hours ago</p>
+            <img src="downvote blank.png" alt="" class="" onclick="ratings(3, 5, 2)" id="modal-downvote-blank5">
+            <img src="downvote.png" alt="" class="hidden" onclick="ratings(4, 5, 2)" id="modal-downvote-color5">
+            <img src="upvote blank.png" alt="" class="" onclick="ratings(1, 5, 2)" id="modal-upvote-blank5">
+            <img src="upvote.png" alt="" class="hidden" onclick="ratings(2, 5, 2)" id="modal-upvote-color5">
+            <hr>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>As a foreigner, I was in their shoes at one point in life. It really sucks and I hope that justice will be served.</p>
+            <p>adrianching123 Replied</p>
+          </div>
+          <div class="discussion-modal-comments">
+            <p>@adrianching123 Go back to Bangladesh! Stop stealing our jobs!</p>
+            <p>yeetyeet Replied</p>
+          </div>
+          <label for="comment">Comment:</label>
+          <input type="text" name="comments" id="comment" placeholder="Type something...">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      <!-- End of Section 5 -->
+    </div>
+
+    <script src="discussions.js"></script>
+    <!-- End of Discussion Content -->
+
+    <!-- Start of Footer -->
+    <div class="footer">
+      <div class="footer-left">
+        <p>&nbsp&nbspFOLLOW US ON OUR SOCIAL MEDIA PAGES :</p>
+        <br>
+
+        <a href="https://www.facebook.com/"><img src="fb.png"></img></a>
+
+        <a href="https://www.instagram.com/"><img src="ins.png"></img></a>
+
+        <a href="https://www.twitter.com/"><img src="twt.png"></img></a>
+
+      </div>
+
+      <div class="footer-middle">
+        <h1>Malaysia Happening</h1>
+        <p>Sunway College, No. 2, Jalan Universiti, Bandar Sunway, 47500, Selangor</p>
+        <p>Copyright © Malaysia Happening - 2019<p>
+      </div>
+
+      <div class="footer-right">
+       <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBSCRIBE TO OUR WEEKLY NEWSLETTER:</p>
+       <br>
+       <br>
+      <form>
+        <input type="text" placeholder="Email" name="email" size="40"required>
+        <button type="submit" class="subscribe-button">Subscribe</button>
+      </form>
+      </div>
+    </div>
+    <!-- End of Footer -->
+  </body>
+
+</html>
